@@ -1,7 +1,7 @@
 ---
 title: Script to convert VM readytime from milliseconds to percentage
 date: 2021-10-27T15:36:59+02:00
-categories: [Powershell, VMWare]
+categories: [programming, powershell]
 tags: [vmware,vcenter,powershell,readytime,millisecond to percentage]
 ---
 
