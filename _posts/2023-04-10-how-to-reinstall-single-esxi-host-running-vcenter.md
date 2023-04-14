@@ -29,13 +29,13 @@ Recipe:
 - After installation run this script to re-register all VMs again
 - ```powershell
   connect-viserver "esxi7-host.local"
-  $csv = Import-Csv -Path 'C:\temp1\vm-info.csv'
+  $csv = Import-Csv -Path 'C:\temp\vm-info.csv'
   foreach ($row in $csv){
     write-host "registering" $row.name -ForegroundColor Green
     $vm = $row.name
     $vmxpath = $row.VMX
     Write-Host "VM name is:" $vm
-    Write-Host "vmx path name is:" $vmxpath
+    Write-Host "vmx path name is:" $vmxpath"
     New-VM -Name $vm -VMFilePath "$vmxpath"
     Write-Host ""
   }
