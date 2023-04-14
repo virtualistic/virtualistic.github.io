@@ -20,7 +20,7 @@ timezone: Europe/Amsterdam
 
 title: Virtualistic # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: Welcome to my tiny outpost on the internet where I occasionally write down some thoughts # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
