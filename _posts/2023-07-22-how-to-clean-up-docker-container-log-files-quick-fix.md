@@ -46,7 +46,7 @@ The contents of this local log is also forwarded to an external logging instance
 
 - Optional step to verify if this container is really using that json log file:
 ```bash
-docker inspect --format='{{.LogPath}}' kube-apiserver
+docker inspect --format='{{{{.LogPath}}}}' kube-apiserver
 ```
 - Now  that we've found the culprit, let's overwrite the log with a blank line:
 ```bash
