@@ -8,7 +8,7 @@ tags: [cleanup, docker, log, container, diskspace]
 So you think you've done everything done correctly when it comes to container logging.\
 Created a nice [daemon.json](https://docs.docker.com/config/containers/logging/configure/#configure-the-default-logging-driver) in the `/etc/docker` directory that should rotate your logs\
 Notice the word "should" because apparently this only works for newly created containers and those settings won't be picked up by containers already present on your system.\
-So now you're getting phonecalls, alerts of filesystems filling up are pooring into your mailbox and you need to act now...
+So now you're getting phonecalls, alerts of filesystems filling up are pouring into your mailbox and you need to act now...
 
 <!--more-->
 
@@ -41,7 +41,8 @@ Hmm that 22G json logfile should give us back some space, but how do I know whic
 docker ps | grep 5d2d8174212
 kube-apiserver
 ```
-In my case the result was: `kube-apiserver`  (your result could be different )
+In my case the result was: `kube-apiserver`  (your result could be different).\
+The contents of this local log is also forwarded to an external logging instance so we can get away with cleaning it up.
 
 - Optional step to verify if this container is really using that json log file:
 ```bash
@@ -56,5 +57,5 @@ A quick look at the diskspace should now reveal that some diskspace has been ret
 Done!
 
 More background info on this matter can be found here:\
-[docker logging driver](https://docs.docker.com/config/containers/logging/configure/#configure-the-default-logging-driver)
+[docker logging driver](https://docs.docker.com/config/containers/logging/configure/#configure-the-default-logging-driver)\
 [docker logging issue](https://github.com/docker/cli/issues/1148)
