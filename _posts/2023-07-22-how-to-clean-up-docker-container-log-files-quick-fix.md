@@ -1,6 +1,6 @@
 ---
 title: "quick fix: how to free some diskspace when docker container logging is filling up your drive"
-date: 2023-07-23T08:47:34+02:00
+date: 2023-07-22T08:47:34+02:00
 categories: [docker,kubernetes]
 tags: [cleanup, docker, log, container, diskspace]
 ---
@@ -26,7 +26,7 @@ Output:
 output:
 45G     /var/lib/docker
 26G     /var/lib/docker/containers
-22G     /var/lib/docker/containers/**5d2d8174212**65d3901783ee2a4e7c374717377cdf516ed2caabd89fafba2f50e/5d2d817421265d3901783ee2a4e7c374717377cdf516ed2caabd89fafba2f50e-json.log
+22G     /var/lib/docker/containers/5d2d817421265d3901783ee2a4e7c374717377cdf516ed2caabd89fafba2f50e/5d2d817421265d3901783ee2a4e7c374717377cdf516ed2caabd89fafba2f50e-json.log
 22G     /var/lib/docker/containers/5d2d817421265d3901783ee2a4e7c374717377cdf516ed2caabd89fafba2f50e
 19G     /var/lib/docker/overlay2
 4G      /var/lib/docker/containers/fbc9823e4a891e75ccce86b2f309ca990fa97b7a447e43d8102b9f0120d7a7f6/fbc9823e4a891e75ccce86b2f309ca990fa97b7a447e43d8102b9f0120d7a7f6-json.log
