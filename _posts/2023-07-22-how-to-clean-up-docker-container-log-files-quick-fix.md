@@ -45,9 +45,9 @@ In my case the result was: `kube-apiserver`  (your result could be different).\
 The contents of this local log is also forwarded to an external logging instance so we can get away with cleaning it up.
 
 - Optional step to verify if this container is really using that json log file:
-```bash
-docker inspect --format='{{{{.LogPath}}}}' kube-apiserver
-```
+{% raw %}
+    docker inspect --format='{{.LogPath}}' kube-apiserver
+{% endraw %}
 - Now  that we've found the culprit, let's overwrite the log with a blank line:
 ```bash
 sudo sh -c 'echo "" > $(docker inspect --format="{{.LogPath}}" kube-apiserver)'
