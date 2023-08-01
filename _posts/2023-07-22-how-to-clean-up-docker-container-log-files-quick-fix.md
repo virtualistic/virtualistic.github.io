@@ -50,7 +50,7 @@ The contents of this local log is also forwarded to an external logging instance
 {% endraw %}
 - Now  that we've found the culprit, let's overwrite the log with a blank line:
 ```bash
-sudo sh -c 'echo "" > $(docker inspect --format="{{.LogPath}}" kube-apiserver)'
+sudo sh -c 'echo "" > $(docker inspect --format="{{{{.LogPath}}}}" kube-apiserver)'
 ```
 A quick look at the diskspace should now reveal that some diskspace has been returned to the system.
 
