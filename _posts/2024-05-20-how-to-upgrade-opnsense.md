@@ -36,8 +36,8 @@ root@opnsense:~ # bectl activate 24.1.7
 ```bash
 root@opnsense:~ # bectl list
 BE     Active Mountpoint Space Created
-24.1.6         -          1.23G 2024-04-20 19:07
-24.1.7 NR      /          0G 2024-05-20 10:00
+24.1.6 N        -          1.23G 2024-04-20 19:07
+24.1.7 R      /          0G 2024-05-20 10:00
 ```
 
 - Reboot the firewall:  
